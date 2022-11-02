@@ -19,6 +19,8 @@
     <section id="user-goal">
       <h2>My Course Goal</h2>
       <p>{{ courseGoal }}</p>
+      <p>{{ firstFunction() }}</p>
+      <p v-html="vhtmlFunction()"></p>
       <!-- We cannot use href when using Vue because it will cause error -->
       <!-- instead use a Vue Directive => v-bind  -->
       <p>Learn more <a v-bind:href="vueLink">about Vue</a></p>
